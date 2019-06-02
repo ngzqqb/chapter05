@@ -14,7 +14,6 @@ namespace sstd{
         argWindow->setGeometry(varGeometry.toRect());
     }
 
-
     void ApplyFrame::applyTop(QQuickWindow* argWindow,
                               QQuickItem * argItem,
                               qreal argMouseX,
