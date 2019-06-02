@@ -31,7 +31,10 @@ CONFIG(debug,debug|release){
 
 QMLSOURCES += $$PWD/appqml/control2/main.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/PrivateBasic.qml
-QMLSOURCES += $$PWD/appqml/control2/Control2/ApplicationWindowControl2.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/SwipeViewApplicationWindowControl2.qml
+
+QMLSOURCES += $$PWD/appqml/control2/Control2/StackViewApplicationWindowControl2.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/PrivateStackView.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
