@@ -8,7 +8,7 @@ PrivateBasic{
     id : idRoot
     flags: Qt.FramelessWindowHint
     property var theScreen : idRoot.screen
-    property real theMargin: 16
+    property real theMargin: 3
 
     GridLayout{
 
