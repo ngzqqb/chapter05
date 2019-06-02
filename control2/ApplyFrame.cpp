@@ -3,82 +3,95 @@
 namespace sstd{
 
     void ApplyFrame::applyTopLeft(QQuickWindow* argWindow,
+                                  QQuickItem * argItem,
                                   qreal argMouseX,
                                   qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
-        auto varTopLeft = varGeometry.topLeft();
-        varTopLeft += {argMouseX,argMouseY};
-        varGeometry.setTopLeft( varTopLeft );
-        argWindow->setGeometry( varGeometry.toRect() );
+        varGeometry .setTopLeft( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ) );
+        argWindow->setGeometry(varGeometry.toRect());
     }
 
 
     void ApplyFrame::applyTop(QQuickWindow* argWindow,
+                          QQuickItem * argItem,
                               qreal argMouseX,
                               qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
-        varGeometry.setTop( varGeometry.top() + argMouseY );
+        varGeometry.setTop( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ).y() );
         argWindow->setGeometry( varGeometry.toRect() );
     }
 
     void ApplyFrame::applyTopRight(QQuickWindow* argWindow,
+                               QQuickItem * argItem,
                                    qreal argMouseX,
                                    qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        varGeometry.setTopRight( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ) );
+        argWindow->setGeometry(varGeometry.toRect());
     }
 
     void ApplyFrame::applyLeft(QQuickWindow* argWindow,
+                             QQuickItem * argItem,
                                qreal argMouseX,
                                qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        argWindow->setGeometry( varGeometry.toRect() );
     }
 
     void ApplyFrame::applyRight(QQuickWindow* argWindow,
+                            QQuickItem * argItem,
                                 qreal argMouseX,
                                 qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        argWindow->setGeometry( varGeometry.toRect() );
     }
 
     void ApplyFrame::applyBottomLeft(QQuickWindow* argWindow,
+                                QQuickItem * argItem,
                                      qreal argMouseX,
                                      qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        argWindow->setGeometry( varGeometry.toRect() );
     }
 
     void ApplyFrame::applyBottomRight(QQuickWindow* argWindow,
+                                 QQuickItem * argItem,
                                       qreal argMouseX,
                                       qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        argWindow->setGeometry( varGeometry.toRect() );
     }
 
     void ApplyFrame::applyBottom(QQuickWindow* argWindow,
+                              QQuickItem * argItem,
                                  qreal argMouseX,
                                  qreal argMouseY){
-        if( !argWindow ){
+        if( (!argWindow) || (!argItem) ){
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        argWindow->setGeometry( varGeometry.toRect() );
     }
 
     ApplyFrame * ApplyFrame::instance(){

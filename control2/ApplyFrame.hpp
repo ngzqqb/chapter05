@@ -9,14 +9,14 @@ namespace sstd{
     public:
         ApplyFrame();
     public:
-        Q_INVOKABLE void applyTopLeft(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyTop(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyTopRight(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyLeft(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyRight(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyBottomLeft(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyBottomRight(QQuickWindow*,qreal,qreal);
-        Q_INVOKABLE void applyBottom(QQuickWindow*,qreal,qreal);
+        Q_INVOKABLE void applyTopLeft(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyTop(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyTopRight(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyLeft(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyRight(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyBottomLeft(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyBottomRight(QQuickWindow*,QQuickItem *,qreal,qreal);
+        Q_INVOKABLE void applyBottom(QQuickWindow*,QQuickItem *,qreal,qreal);
     public:
         static ApplyFrame * instance();
     private:
