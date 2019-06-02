@@ -47,6 +47,7 @@ namespace sstd{
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        varGeometry.setLeft( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ).x() );
         argWindow->setGeometry( varGeometry.toRect() );
     }
 
@@ -58,6 +59,7 @@ namespace sstd{
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        varGeometry.setRight( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ).x() );
         argWindow->setGeometry( varGeometry.toRect() );
     }
 
@@ -69,6 +71,7 @@ namespace sstd{
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        varGeometry.setBottomLeft( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ) );
         argWindow->setGeometry( varGeometry.toRect() );
     }
 
@@ -80,6 +83,7 @@ namespace sstd{
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        varGeometry.setBottomRight( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ) );
         argWindow->setGeometry( varGeometry.toRect() );
     }
 
@@ -91,6 +95,7 @@ namespace sstd{
             return;
         }
         QRectF varGeometry = argWindow->geometry();
+        varGeometry.setBottom( argItem->mapToGlobal(QPointF {argMouseX,argMouseY} ).y() );
         argWindow->setGeometry( varGeometry.toRect() );
     }
 
