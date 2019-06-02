@@ -39,7 +39,9 @@ PrivateBasic{
             Layout.preferredHeight: idRoot.theMargin
             cursorShape : Qt.SizeVerCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyTop( idRoot , mouse.x , mouse.y );
+            }
         }
 
         MouseArea{
@@ -48,7 +50,9 @@ PrivateBasic{
             Layout.preferredHeight: idRoot.theMargin
             cursorShape :  Qt.SizeBDiagCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyTopRight( idRoot , mouse.x , mouse.y );
+            }
         }
 
         MouseArea{
@@ -57,7 +61,9 @@ PrivateBasic{
             Layout.preferredWidth: idRoot.theMargin
             cursorShape : Qt.SizeHorCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyLeft( idRoot , mouse.x , mouse.y );
+            }
         }
 
         ColumnLayout{
@@ -114,7 +120,9 @@ PrivateBasic{
             Layout.preferredWidth: idRoot.theMargin
             cursorShape : Qt.SizeHorCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyRight( idRoot , mouse.x , mouse.y );
+            }
         }
 
         MouseArea{
@@ -123,7 +131,9 @@ PrivateBasic{
             Layout.preferredHeight: idRoot.theMargin
             cursorShape :  Qt.SizeBDiagCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyBottomLeft( idRoot , mouse.x , mouse.y );
+            }
         }
 
         MouseArea{
@@ -132,7 +142,9 @@ PrivateBasic{
             Layout.preferredHeight: idRoot.theMargin
             cursorShape : Qt.SizeVerCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyBottom( idRoot , mouse.x , mouse.y );
+            }
         }
 
         MouseArea{
@@ -141,7 +153,9 @@ PrivateBasic{
             Layout.preferredHeight: idRoot.theMargin
             cursorShape : Qt.SizeFDiagCursor
             acceptedButtons : Qt.LeftButton
-            onClicked: { console.log("A") }
+            onPositionChanged: {
+                 ApplyFrame.applyBottomRight( idRoot , mouse.x , mouse.y );
+            }
         }
 
     }
