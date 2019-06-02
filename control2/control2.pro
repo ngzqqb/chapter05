@@ -37,6 +37,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/StackViewApplicationWindowControl2.
 QMLSOURCES += $$PWD/appqml/control2/Control2/PrivateStackView.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/SplitViewApplicationWindowControl2.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/FramelessWindow.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/OnlyCloseButtonWindow.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
