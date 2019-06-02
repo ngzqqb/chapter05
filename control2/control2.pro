@@ -35,6 +35,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/SwipeViewApplicationWindowControl2.
 QMLSOURCES += $$PWD/appqml/control2/Control2/ScrollViewApplicationWindowControl2.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/StackViewApplicationWindowControl2.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/PrivateStackView.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/SplitViewApplicationWindowControl2.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
