@@ -1,14 +1,20 @@
 ﻿import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
+import QtGraphicalEffects 1.12
 import sstd.applyframe 1.0
+
+/*begin:import*/
+import theqml_the_debug.sstd.styled.app 1.0
+/*end:import*/
 
 PrivateBasic{
 
     id : idRoot
     flags: Qt.FramelessWindowHint
     property var theScreen : idRoot.screen
-    property real theMargin: 3
+    property real theMargin: 8
+    color : Qt.rgba(0,0,0,0)
 
     GridLayout{
 
@@ -66,52 +72,76 @@ PrivateBasic{
             }
         }
 
-        ColumnLayout{
-
+        /*可见区域*/
+        Item {
             Layout.fillHeight: true
             Layout.fillWidth: true
 
-            /*标题栏*/
-            RowLayout{
-
-                width: idRoot.width - idRoot.theMargin - idRoot.theMargin
-                height: idButton.height
-
-                Item {
-                    Layout.fillWidth: true
-                    height: parent.height
-                    MouseArea {
-                        anchors.fill: parent
-                        property point clickPosition : Qt.point(0,0)
-                        onPositionChanged: {
-                            var varDx = mouse.x - clickPosition.x;
-                            var varDy = mouse.y - clickPosition.y;
-                            idRoot.setX( idRoot.x + varDx )
-                            idRoot.setY( Math.max(theScreen.virtualY, idRoot.y + varDy) )
-                        }
-                        onPressed: {
-                            clickPosition = Qt.point( mouse.x , mouse.y )
-                        }
-                        acceptedButtons : Qt.LeftButton
-                    }
-                }
-
-                ToolButton{
-                    id : idButton
-                    text: "X"
-                    onClicked: {
-                        idRoot.close();
-                    }
-                }
-
+            RectangularGlow {
+                anchors.fill: idVisibleArea
+                glowRadius: idRoot.theMargin
+                cornerRadius : 1
+                spread: 0.01
+                color: GlobalAppData.background
             }
 
-            /*中心内容*/
-            Item{
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
+            Pane {
+                id : idVisibleArea
 
+                padding: 0
+                topInset: 0
+                bottomInset: 0
+                rightInset: 0
+                leftInset: 0
+                anchors.fill: parent
+
+                ColumnLayout{
+
+                    anchors.fill: parent
+
+                    /*标题栏*/
+                    RowLayout{
+
+                        width: idRoot.width - idRoot.theMargin - idRoot.theMargin
+                        height: idButton.height
+
+                        Item {
+                            Layout.fillWidth: true
+                            height: parent.height
+                            MouseArea {
+                                anchors.fill: parent
+                                property point clickPosition : Qt.point(0,0)
+                                onPositionChanged: {
+                                    var varDx = mouse.x - clickPosition.x;
+                                    var varDy = mouse.y - clickPosition.y;
+                                    idRoot.setX( idRoot.x + varDx )
+                                    idRoot.setY( Math.max(theScreen.virtualY, idRoot.y + varDy) )
+                                }
+                                onPressed: {
+                                    clickPosition = Qt.point( mouse.x , mouse.y )
+                                }
+                                acceptedButtons : Qt.LeftButton
+                            }
+                        }
+
+                        ToolButton{
+                            id : idButton
+                            text: "X"
+                            onClicked: {
+                                idRoot.close();
+                            }
+                        }
+
+                    }
+
+                    /*中心内容*/
+                    Item{
+                        Layout.fillHeight: true
+                        Layout.fillWidth: true
+                    }
+
+                }
+            }
         }
 
         MouseArea{
@@ -159,8 +189,6 @@ PrivateBasic{
         }
 
     }
-
-
 
 }/*PrivateBasic*/
 
