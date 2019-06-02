@@ -84,7 +84,7 @@ PrivateBasic{
         Button{
             text: qsTr("Push")
             onClicked: {
-                idContent.push( Qt.resolvedUrl("PrivateStackView.qml") ,{"text":String(idWindow.createIndex++)} )
+                idContent.push( Qt.resolvedUrl("PrivateStackView.qml") ,{"window":idWindow} )
             }
             Layout.fillWidth: true
         }
