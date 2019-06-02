@@ -29,7 +29,7 @@ PrivateBasic{
             cursorShape : Qt.SizeFDiagCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyTopLeft( idRoot , idTopLeft,mouse.x,mouse.y );
+                ApplyFrame.applyTopLeft( idRoot , idTopLeft,mouse.x,mouse.y );
             }
         }
 
@@ -40,7 +40,7 @@ PrivateBasic{
             cursorShape : Qt.SizeVerCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyTop( idRoot , idTop ,mouse.x,mouse.y);
+                ApplyFrame.applyTop( idRoot , idTop ,mouse.x,mouse.y);
             }
         }
 
@@ -51,7 +51,7 @@ PrivateBasic{
             cursorShape :  Qt.SizeBDiagCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyTopRight(idRoot , idTopRight ,mouse.x,mouse.y );
+                ApplyFrame.applyTopRight(idRoot , idTopRight ,mouse.x,mouse.y );
             }
         }
 
@@ -62,7 +62,7 @@ PrivateBasic{
             cursorShape : Qt.SizeHorCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyLeft( idRoot , idLeft ,mouse.x,mouse.y);
+                ApplyFrame.applyLeft( idRoot , idLeft ,mouse.x,mouse.y);
             }
         }
 
@@ -121,7 +121,7 @@ PrivateBasic{
             cursorShape : Qt.SizeHorCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyRight( idRoot , idRight,mouse.x,mouse.y );
+                ApplyFrame.applyRight( idRoot , idRight,mouse.x,mouse.y );
             }
         }
 
@@ -132,7 +132,7 @@ PrivateBasic{
             cursorShape :  Qt.SizeBDiagCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyBottomLeft( idRoot ,idBottomLeft,mouse.x,mouse.y );
+                ApplyFrame.applyBottomLeft( idRoot ,idBottomLeft,mouse.x,mouse.y );
             }
         }
 
@@ -143,7 +143,7 @@ PrivateBasic{
             cursorShape : Qt.SizeVerCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyBottom( idRoot , idBottom,mouse.x,mouse.y );
+                ApplyFrame.applyBottom( idRoot , idBottom,mouse.x,mouse.y );
             }
         }
 
@@ -154,7 +154,7 @@ PrivateBasic{
             cursorShape : Qt.SizeFDiagCursor
             acceptedButtons : Qt.LeftButton
             onPositionChanged: {
-                 ApplyFrame.applyBottomRight( idRoot , idBottomRight,mouse.x,mouse.y );
+                ApplyFrame.applyBottomRight( idRoot , idBottomRight,mouse.x,mouse.y );
             }
         }
 

@@ -16,7 +16,7 @@ namespace sstd{
 
 
     void ApplyFrame::applyTop(QQuickWindow* argWindow,
-                          QQuickItem * argItem,
+                              QQuickItem * argItem,
                               qreal argMouseX,
                               qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
@@ -28,7 +28,7 @@ namespace sstd{
     }
 
     void ApplyFrame::applyTopRight(QQuickWindow* argWindow,
-                               QQuickItem * argItem,
+                                   QQuickItem * argItem,
                                    qreal argMouseX,
                                    qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
@@ -40,7 +40,7 @@ namespace sstd{
     }
 
     void ApplyFrame::applyLeft(QQuickWindow* argWindow,
-                             QQuickItem * argItem,
+                               QQuickItem * argItem,
                                qreal argMouseX,
                                qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
@@ -52,7 +52,7 @@ namespace sstd{
     }
 
     void ApplyFrame::applyRight(QQuickWindow* argWindow,
-                            QQuickItem * argItem,
+                                QQuickItem * argItem,
                                 qreal argMouseX,
                                 qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
@@ -64,7 +64,7 @@ namespace sstd{
     }
 
     void ApplyFrame::applyBottomLeft(QQuickWindow* argWindow,
-                                QQuickItem * argItem,
+                                     QQuickItem * argItem,
                                      qreal argMouseX,
                                      qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
@@ -76,7 +76,7 @@ namespace sstd{
     }
 
     void ApplyFrame::applyBottomRight(QQuickWindow* argWindow,
-                                 QQuickItem * argItem,
+                                      QQuickItem * argItem,
                                       qreal argMouseX,
                                       qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
@@ -88,7 +88,7 @@ namespace sstd{
     }
 
     void ApplyFrame::applyBottom(QQuickWindow* argWindow,
-                              QQuickItem * argItem,
+                                 QQuickItem * argItem,
                                  qreal argMouseX,
                                  qreal argMouseY){
         if( (!argWindow) || (!argItem) ){
