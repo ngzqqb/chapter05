@@ -10,6 +10,9 @@ CONFIG(debug,debug|release){
 
 SOURCES += $$PWD/main.cpp
 
+SOURCES += $$PWD/ApplyFrame.cpp
+HEADERS += $$PWD/ApplyFrame.hpp
+
 include($$PWD/../../sstd_library/sstd_library.pri)
 include($$PWD/../../sstd_qt_qml_quick_library/sstd_qt_qml_quick_library.pri)
 include($$PWD/../../sstd_library/add_vc_debug_console.pri)
@@ -36,8 +39,9 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/ScrollViewApplicationWindowControl2
 QMLSOURCES += $$PWD/appqml/control2/Control2/StackViewApplicationWindowControl2.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/PrivateStackView.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/SplitViewApplicationWindowControl2.qml
-QMLSOURCES += $$PWD/appqml/control2/Control2/FramelessWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/OnlyCloseButtonWindow.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/FramelessWindow.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/FullDefinedFramelessWindow.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
