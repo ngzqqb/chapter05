@@ -77,5 +77,26 @@ PrivateBasic{
         }
     }
 
+    PrivateBasic{
+        FollowWindow.targetWindow : idRoot;
+        FollowWindow.bottomMargin: -2;
+        FollowWindow.leftMargin:   2 ;
+        FollowWindow.rightMargin: -2 ;
+        FollowWindow.topMargin: 2;
+        flags: Qt.FramelessWindowHint | Qt.WindowTransparentForInput ;
+        id : idTitleWindow
+        RowLayout {
+            width : idTitleWindow.width
+            height: idTitleWindow.height
+            spacing: 0
+            Rectangle{
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                color:"red"
+            }
+        }
+    }
+
+
 }
 
