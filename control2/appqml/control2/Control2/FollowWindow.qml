@@ -11,6 +11,10 @@ PrivateBasic{
 
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
+        FollowWindow.bottomMargin: -2;
+        FollowWindow.leftMargin: idRoot.visibility == 4 ? 2 : 8;
+        FollowWindow.rightMargin: -200;
+        FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint;
         id : idTitleWindow
         RowLayout {
