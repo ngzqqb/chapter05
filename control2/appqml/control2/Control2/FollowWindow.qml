@@ -1,6 +1,7 @@
 ﻿import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
+import QtQuick.Window 2.12
 import sstd.follow.window 1.0
 
 PrivateBasic{
@@ -12,7 +13,7 @@ PrivateBasic{
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
         FollowWindow.bottomMargin: -2;
-        FollowWindow.leftMargin: idRoot.visibility == 4 ? 2 : 8;
+        FollowWindow.leftMargin: idRoot.visibility === Window.Maximized ? 2 : 8;
         FollowWindow.rightMargin: -200;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint;
