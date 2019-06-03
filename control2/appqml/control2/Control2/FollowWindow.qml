@@ -17,7 +17,7 @@ PrivateBasic{
         FollowWindow.leftMargin:   0 ;
         FollowWindow.rightMargin: 256 - idRoot.width ;
         FollowWindow.topMargin: 2;
-        flags: Qt.FramelessWindowHint;
+        flags: Qt.FramelessWindowHint | Qt.ToolTip ;
         id : idTitleWindowLeft
         RowLayout {
             width : idTitleWindowLeft.width
@@ -47,7 +47,7 @@ PrivateBasic{
         FollowWindow.leftMargin: idRoot.width - 128 ;
         FollowWindow.rightMargin: 0;
         FollowWindow.topMargin: 2;
-        flags: Qt.FramelessWindowHint;
+        flags: Qt.FramelessWindowHint | Qt.ToolTip;
         id : idTitleWindowRight
         RowLayout {
             width : idTitleWindowRight.width
