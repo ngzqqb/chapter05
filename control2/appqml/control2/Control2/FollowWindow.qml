@@ -14,6 +14,15 @@ PrivateBasic{
     minimumWidth: 256+128+64
     minimumHeight: 128
     flags: Qt.WindowMaximizeButtonHint | Qt.CustomizeWindowHint | Qt.Dialog | Qt.WindowTitleHint
+    property string titleWhenUnActive: "FollowWindow.qml"
+
+    onActiveChanged: {
+        if(idRoot.active){
+            idRoot.title = " "
+        }else{
+            idRoot.title = idRoot.titleWhenUnActive;
+        }
+    }
 
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
@@ -109,12 +118,6 @@ PrivateBasic{
             }
         }
     }
-
-onActiveChanged: {
-console.log(  active )
-
-}
-
 
 }
 
