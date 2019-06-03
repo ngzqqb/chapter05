@@ -4,6 +4,10 @@ import QtQuick.Layouts 1.12
 import QtQuick.Window 2.12
 import sstd.follow.window 1.0
 
+/*begin:import*/
+import theqml_the_debug.sstd.styled.app 1.0
+/*end:import*/
+
 PrivateBasic{
 
     id: idRoot
@@ -14,7 +18,7 @@ PrivateBasic{
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
         FollowWindow.bottomMargin: -2;
-        FollowWindow.leftMargin:   0 ;
+        FollowWindow.leftMargin:   2 ;
         FollowWindow.rightMargin: 256 - idRoot.width ;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.ToolTip ;
@@ -45,7 +49,7 @@ PrivateBasic{
         FollowWindow.targetWindow : idRoot;
         FollowWindow.bottomMargin: -2;
         FollowWindow.leftMargin: idRoot.width - 128 ;
-        FollowWindow.rightMargin: 0;
+        FollowWindow.rightMargin: -2;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.ToolTip;
         id : idTitleWindowRight
@@ -79,7 +83,7 @@ PrivateBasic{
 
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
-        FollowWindow.bottomMargin: -2;
+        FollowWindow.bottomMargin: 0 ;
         FollowWindow.leftMargin:   2 ;
         FollowWindow.rightMargin: -2 ;
         FollowWindow.topMargin: 2;
@@ -92,7 +96,7 @@ PrivateBasic{
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-                color:"red"
+                color: GlobalAppData.background
             }
         }
     }
