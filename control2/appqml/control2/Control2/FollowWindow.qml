@@ -22,6 +22,7 @@ PrivateBasic{
         FollowWindow.rightMargin: 256 - idRoot.width ;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.ToolTip ;
+        visible: idRoot.active
         id : idTitleWindowLeft
         RowLayout {
             width : idTitleWindowLeft.width
@@ -53,6 +54,7 @@ PrivateBasic{
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.ToolTip;
         id : idTitleWindowRight
+        visible: idRoot.active
         RowLayout {
             width : idTitleWindowRight.width
             height: idTitleWindowRight.height
@@ -88,12 +90,14 @@ PrivateBasic{
         FollowWindow.rightMargin: -2 ;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.WindowTransparentForInput ;
+        color: Qt.rgba(0,0,0,0)
         id : idTitleWindow
         RowLayout {
             width : idTitleWindow.width
             height: idTitleWindow.height
             spacing: 0
             Rectangle{
+                visible: idRoot.active
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 gradient: Gradient {
@@ -105,6 +109,11 @@ PrivateBasic{
             }
         }
     }
+
+onActiveChanged: {
+console.log(  active )
+
+}
 
 
 }
