@@ -9,6 +9,7 @@ PrivateBasic{
     id: idRoot
     minimumWidth: 256+128+64
     minimumHeight: 128
+    flags: Qt.WindowMaximizeButtonHint | Qt.CustomizeWindowHint | Qt.Dialog | Qt.WindowTitleHint
 
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
