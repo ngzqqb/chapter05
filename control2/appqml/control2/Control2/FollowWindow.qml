@@ -96,7 +96,12 @@ PrivateBasic{
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-                color: GlobalAppData.background
+                gradient: Gradient {
+                    GradientStop { position: 0.0; color:  GlobalAppData.isDark ?
+                                                              Qt.lighter( GlobalAppData.background ):
+                    Qt.darker( GlobalAppData.background )}
+                    GradientStop { position: 1.0; color: GlobalAppData.background }
+                }
             }
         }
     }
