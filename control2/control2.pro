@@ -46,6 +46,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/OnlyCloseButtonWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/FramelessWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/FullDefinedFramelessWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/FollowWindow.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/NoneButtonWindow.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
