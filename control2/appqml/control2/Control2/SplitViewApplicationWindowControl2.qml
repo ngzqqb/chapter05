@@ -7,6 +7,7 @@ import QtQuick.Controls 1.4 as Control1
 import theqml_the_debug.sstd.styled.app 1.0
 /*end:import*/
 
+//@setParentWhenRelease(true)
 PrivateBasic{
 
     menuBar: MenuBar {
