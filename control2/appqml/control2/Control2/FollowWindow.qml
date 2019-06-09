@@ -27,7 +27,7 @@ PrivateBasic{
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
         FollowWindow.bottomMargin: -2;
-        FollowWindow.leftMargin:   2 ;
+        FollowWindow.leftMargin:   1 ;
         FollowWindow.rightMargin: 256 - idRoot.width ;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.ToolTip ;
@@ -59,7 +59,7 @@ PrivateBasic{
         FollowWindow.targetWindow : idRoot;
         FollowWindow.bottomMargin: -2;
         FollowWindow.leftMargin: idRoot.width - 128 ;
-        FollowWindow.rightMargin: -2;
+        FollowWindow.rightMargin: -1;
         FollowWindow.topMargin: 2;
         flags: Qt.FramelessWindowHint | Qt.ToolTip;
         id : idTitleWindowRight
@@ -81,7 +81,11 @@ PrivateBasic{
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-                color:"blue"
+                color: GlobalAppData.isDark? "darkblue" : "lightblue"
+                Label{
+                    anchors.centerIn: parent
+                    text: "X"
+                }
                 MouseArea{
                     anchors.fill: parent
                     onPressed: {
