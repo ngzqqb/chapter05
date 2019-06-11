@@ -96,6 +96,7 @@ PrivateBasic{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 color: GlobalAppData.isDark? "darkblue" : "lightblue"
+                border.color: "black"
                 Label{
                     anchors.centerIn: parent
                     text: "X"
