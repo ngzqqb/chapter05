@@ -111,32 +111,6 @@ PrivateBasic{
         }
     }
 
-    PrivateBasic{
-        FollowWindow.targetWindow : idRoot;
-        FollowWindow.bottomMargin: 0 ;
-        FollowWindow.leftMargin:   2 ;
-        FollowWindow.rightMargin: -2 ;
-        FollowWindow.topMargin: 2;
-        flags: Qt.FramelessWindowHint | Qt.WindowTransparentForInput ;
-        color: Qt.rgba(0,0,0,0)
-        id : idTitleWindow
-        RowLayout {
-            width : idTitleWindow.width
-            height: idTitleWindow.height
-            spacing: 0
-            Rectangle{
-                visible: idRoot.active
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color:  GlobalAppData.isDark ?
-                                                              Qt.lighter( GlobalAppData.background ):
-                    Qt.darker( GlobalAppData.background )}
-                    GradientStop { position: 1.0; color: GlobalAppData.background }
-                }
-            }
-        }
-    }
 
 }
 
