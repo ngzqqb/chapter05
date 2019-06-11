@@ -98,6 +98,7 @@ inline static void startTheApp() {
         1, 0,
         "FollowWindow",
         QStringLiteral("This Is Attached Type!"));
+    qmlProtectModule("sstd.follow.window", 1);
 }
 
 Q_COREAPP_STARTUP_FUNCTION(startTheApp)

@@ -2,7 +2,7 @@
 
 #include <sstd_qt_qml_quick_library.hpp>
 
-namespace sstd{
+namespace sstd {
 
     class FollowWindow : public QObject {
         Q_OBJECT
@@ -37,40 +37,40 @@ namespace sstd{
         static FollowWindow *qmlAttachedProperties(QObject *object);
     private:
         using Super = QObject;
-        QQuickWindow * thisWindow{nullptr};
-        QQuickWindow * thisTargetWindow{nullptr};
+        QQuickWindow * thisWindow{ nullptr };
+        QQuickWindow * thisTargetWindow{ nullptr };
         qreal thisLeftMargin{ 0 };
         qreal thisRightMargin{ 0 };
         qreal thisTopMargin{ 0 };
         qreal thisBottomMargin{ 0 };
-        int thisUpdateThisPosCount{0};
+        int thisUpdateThisPosCount{ 0 };
         void updateThisPos();
         void tryUpdateThisPos();
     private:
         sstd_class(FollowWindow);
     };
 
-    inline QQuickWindow * FollowWindow::getTargetWindow() const{
+    inline QQuickWindow * FollowWindow::getTargetWindow() const {
         return thisTargetWindow;
     }
 
-    inline qreal FollowWindow::getLeftMargin() const{
+    inline qreal FollowWindow::getLeftMargin() const {
         return thisLeftMargin;
     }
 
-    inline qreal FollowWindow::getRightMargin() const{
+    inline qreal FollowWindow::getRightMargin() const {
         return thisRightMargin;
     }
 
-    inline qreal FollowWindow::getTopMargin() const{
+    inline qreal FollowWindow::getTopMargin() const {
         return thisTopMargin;
     }
 
-    inline qreal FollowWindow::getBottomMargin() const{
+    inline qreal FollowWindow::getBottomMargin() const {
         return thisBottomMargin;
     }
 
 }/*namespace sstd*/
 
-QML_DECLARE_TYPEINFO(sstd::FollowWindow,QML_HAS_ATTACHED_PROPERTIES)
+QML_DECLARE_TYPEINFO(sstd::FollowWindow, QML_HAS_ATTACHED_PROPERTIES)
 
