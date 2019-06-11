@@ -24,13 +24,22 @@ PrivateBasic{
         }
     }
 
+    Item{
+        width: idRoot.width
+        height: idRoot.height
+        TextField {
+            text: qsTr("测试")
+            anchors.centerIn: parent
+        }
+    }
+
     PrivateBasic{
         FollowWindow.targetWindow : idRoot;
         FollowWindow.bottomMargin: -2;
         FollowWindow.leftMargin:   1 ;
         FollowWindow.rightMargin: 256 - idRoot.width ;
         FollowWindow.topMargin: 2;
-        flags: Qt.FramelessWindowHint | Qt.ToolTip ;
+        flags: Qt.FramelessWindowHint | Qt.ToolTip  | Qt.WindowDoesNotAcceptFocus | Qt.BypassWindowManagerHint ;
         visible: idRoot.active
         id : idTitleWindowLeft
         RowLayout {
@@ -40,17 +49,20 @@ PrivateBasic{
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                border.color: "black"
                 color:"red"
             }
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 color:"green"
+                border.color: "black"
             }
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 color:"blue"
+                border.color: "black"
             }
         }
     }
@@ -61,7 +73,7 @@ PrivateBasic{
         FollowWindow.leftMargin: idRoot.width - 128 ;
         FollowWindow.rightMargin: -1;
         FollowWindow.topMargin: 2;
-        flags: Qt.FramelessWindowHint | Qt.ToolTip;
+        flags: Qt.FramelessWindowHint | Qt.ToolTip | Qt.WindowDoesNotAcceptFocus | Qt.BypassWindowManagerHint ;
         id : idTitleWindowRight
         visible: idRoot.active
         RowLayout {
@@ -72,11 +84,13 @@ PrivateBasic{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 color:"red"
+                border.color: "black"
             }
             Rectangle{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 color:"green"
+                border.color: "black"
             }
             Rectangle{
                 Layout.fillHeight: true
@@ -91,6 +105,7 @@ PrivateBasic{
                     onPressed: {
                         idRoot.close();
                     }
+                    id : idCloseButtonMouseArea
                 }
             }
         }
