@@ -1,13 +1,11 @@
 ﻿import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.12
-import QtQuick.Controls 1.4 as Control1
 
 /*begin:import*/
 import theqml_the_debug.sstd.styled.app 1.0
 /*end:import*/
 
-//@setParentWhenRelease(true)
 PrivateBasic{
 
     menuBar: MenuBar {
@@ -78,39 +76,31 @@ PrivateBasic{
     id : idWindow
     property int createIndex : 1 ;
 
-    Control1.SplitView{
+    SplitView{
         anchors.fill: parent
         orientation:  Qt.Vertical
-        handleDelegate : Rectangle {
-            width: 1
-            height: 1
-            color: GlobalAppData.accent
-        }
-        Control1.SplitView{
-            handleDelegate : Rectangle {
-                width: 1
-                height: 1
-                color: GlobalAppData.accent
-            }
+        SplitView{
             Rectangle{
                 color: "red"
-                Layout.minimumWidth : 32
+                SplitView.preferredWidth: 32
             }
             Rectangle{
                 color: "blue"
-                Layout.minimumWidth : 32
+                SplitView.minimumWidth : 32
+                SplitView.fillWidth: true
             }
             Rectangle{
                 color: "green"
-                Layout.minimumWidth : 32
+                SplitView.preferredWidth: 32
             }
-            Layout.minimumWidth : 32
-            Layout.minimumHeight: 32
+            SplitView.minimumWidth : 32
+            SplitView.minimumHeight: 32
+            SplitView.preferredHeight: 128
         }
         Rectangle{
             color: "yellow"
-            Layout.minimumWidth : 32
-            Layout.minimumHeight: 32
+            SplitView.preferredWidth: 32
+            SplitView.preferredHeight: 16
         }
     }
 
