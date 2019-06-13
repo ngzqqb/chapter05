@@ -47,6 +47,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/FramelessWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/FullDefinedFramelessWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/FollowWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/NoneButtonWindow.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/SplashWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/TumblerControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ToolTipControl.qml
 
