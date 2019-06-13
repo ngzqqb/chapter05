@@ -34,9 +34,7 @@ PrivateBasic{
                 border.width: 3
             }
 
-
         }
-
 
     }
 
