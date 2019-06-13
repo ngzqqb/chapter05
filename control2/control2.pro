@@ -51,6 +51,8 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/SplashWindow.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/TumblerControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ToolTipControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/MenuControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/OverlayWindow.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/DrawerControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
