@@ -4,6 +4,12 @@ import QtQuick.Layouts 1.12
 
 PrivateBasic{
     id : idRoot
+
+    Slider{
+        orientation: Qt.Vertical
+        height: idRoot.height
+    }
+
     ColumnLayout{
         anchors.fill: parent
 
