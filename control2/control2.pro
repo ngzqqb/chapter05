@@ -64,6 +64,8 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/ButtonControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/DelayButtonControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ToolBarControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/RoundButtonControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/ScrollIndicatorControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/ScrollBarControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
