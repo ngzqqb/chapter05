@@ -41,9 +41,7 @@ PrivateBasic{
             focus: true
             text: "10"
             color : acceptableInput? GlobalAppData.foreground :
-                                     GlobalAppData.color(GlobalAppData.Red ,
-                                                         GlobalAppData.isDark? GlobalAppData.Shade300 :
-                                                                               GlobalAppData.Shade800 )
+                                     GlobalAppData.accent
             validator: IntValidator{
                 bottom: 0;
                 top: 31;

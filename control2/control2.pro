@@ -57,6 +57,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/TextAreaControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/TextFieldControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/RangeSliderControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/SliderControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/BusyIndicatorControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
