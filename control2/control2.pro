@@ -73,6 +73,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/ButtonGroupControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/SwitchControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/SpinBoxControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/RadioButtonControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/PageIndicatorControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
