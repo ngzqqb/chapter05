@@ -7,35 +7,37 @@ PrivateBasic{
     ColumnLayout{
         anchors.fill: parent
 
-        SwipeView{
+        ListView {
+            id : idListView
             Layout.fillHeight: true
             Layout.fillWidth: true
-
-            Repeater{
-                model: 8
-                Page{
-                    Label{
-                        text: "A" + index
-                        anchors.centerIn: parent
-                    }
+            model: 8
+            snapMode: ListView.SnapOneItem
+            orientation:ListView.Horizontal
+            highlightRangeMode: ListView.StrictlyEnforceRange
+            delegate: Page{
+                width: idListView.width
+                height: idListView.height
+                Label{
+                    text: "A" + index
+                    anchors.centerIn: parent
                 }
             }
-
-            id : idSwipeView
         }
 
         PageIndicator{
             id : idPageIndicator
             Layout.alignment: Qt.AlignHCenter
-            count : idSwipeView.count
-            currentIndex: idSwipeView.currentIndex
+            count : idListView.count
+            currentIndex: idListView.currentIndex
         }
 
     }
 
 }
 
-
+/*endl_input_of_latex_for_clanguage_lick*/
+// https://blog.csdn.net/luoyayun361/article/details/83373805
 
 
 
