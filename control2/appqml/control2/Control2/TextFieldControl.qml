@@ -8,16 +8,26 @@ import theqml_the_debug.sstd.styled.app 1.0
 
 PrivateBasic{
 
+    id : idRoot
     ColumnLayout{
         anchors.fill: parent
 
+        Item{
+            Layout.fillHeight: true
+            Layout.fillWidth: true
+        }
+
         TextField{
+            Layout.alignment: Qt.AlignHCenter
+            Layout.preferredWidth:idRoot.width*0.8
             placeholderText: qsTr("placeholderText")
             readOnly: false
             focus: true
         }
 
         TextField{
+            Layout.alignment: Qt.AlignHCenter
+            Layout.preferredWidth:idRoot.width*0.8
             text: "12345678"
             readOnly: false
             echoMode :TextInput.Password
@@ -25,6 +35,8 @@ PrivateBasic{
         }
 
         TextField{
+            Layout.alignment: Qt.AlignHCenter
+            Layout.preferredWidth:idRoot.width*0.8
             readOnly: false
             focus: true
             text: "10"
@@ -36,6 +48,11 @@ PrivateBasic{
                 bottom: 0;
                 top: 31;
             }
+        }
+
+        Item{
+            Layout.fillHeight: true
+            Layout.fillWidth: true
         }
 
     }
