@@ -68,6 +68,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/ScrollIndicatorControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ScrollBarControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ComboBoxControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/LabelControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/CheckBoxControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
