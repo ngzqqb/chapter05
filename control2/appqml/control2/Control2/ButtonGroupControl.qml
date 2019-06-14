@@ -40,12 +40,12 @@ PrivateBasic{
        ButtonGroup{
            id : idButtonGroup2
            exclusive:false
+           checkedButton : idCheckBox
            checkState: idCheckBox.checkState
        }
 
        CheckBox{
            id : idCheckBox
-           ButtonGroup.group: idButtonGroup2
            checkState: idButtonGroup2.checkState
            text: qsTr("All")
        }
