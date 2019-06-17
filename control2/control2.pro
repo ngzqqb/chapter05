@@ -84,6 +84,8 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/SwipeDelegateControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/RadioDelegateControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ItemDelegateControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/CheckDelegateControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/GroupBoxControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/FrameControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
