@@ -76,6 +76,7 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/RadioButtonControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/PageIndicatorControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/TabBarControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/MenuBarControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/ActionControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
