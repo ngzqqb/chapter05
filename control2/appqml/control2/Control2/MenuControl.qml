@@ -23,6 +23,7 @@ PrivateBasic{
             id : idMenu
             MenuItem { text: "A" }
             MenuItem { text: "B" }
+            MenuSeparator{}
             MenuItem { text: "C" }
             Menu{
                 title: "R"
