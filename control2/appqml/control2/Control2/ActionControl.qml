@@ -40,33 +40,7 @@ PrivateBasic{
     menuBar: MenuBar {
 
         Menu{
-            title: qsTr("一")
-            MenuItem{
-                action:idActionA
-            }
-            MenuItem{
-                action:idActionB
-            }
-            MenuItem{
-                action:idActionC
-            }
-        }
-
-        Menu{
-            title: qsTr("二")
-            MenuItem{
-                action:idActionA
-            }
-            MenuItem{
-                action:idActionB
-            }
-            MenuItem{
-                action:idActionC
-            }
-        }
-
-        Menu{
-            title: qsTr("三")
+            title: qsTr("M")
             MenuItem{
                 action:idActionA
             }
