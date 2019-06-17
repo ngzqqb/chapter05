@@ -79,6 +79,11 @@ QMLSOURCES += $$PWD/appqml/control2/Control2/MenuBarControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/ActionControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/DialogControl.qml
 QMLSOURCES += $$PWD/appqml/control2/Control2/DialogButtonBoxControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/SwitchDelegateControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/SwipeDelegateControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/RadioDelegateControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/ItemDelegateControl.qml
+QMLSOURCES += $$PWD/appqml/control2/Control2/CheckDelegateControl.qml
 
 lupdate_only{
     SOURCES += $$QMLSOURCES
