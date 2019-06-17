@@ -20,7 +20,7 @@ PrivateBasic{
                 model: 20
                 delegate: SwipeDelegate{
                     width: parent.width          ;
-                    text: (index + 1 ) + qsTr(" : 向左滑动出现按钮")
+                    text: (index + 1 ) + " : " + qsTr("向左滑动出现按钮")
                     swipe.right: ToolButton {
                         anchors.right: parent.right;
                         anchors.verticalCenter: parent.verticalCenter;
