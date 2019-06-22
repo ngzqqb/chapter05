@@ -102,4 +102,3 @@ inline static void startTheApp() {
 }
 
 Q_COREAPP_STARTUP_FUNCTION(startTheApp)
-

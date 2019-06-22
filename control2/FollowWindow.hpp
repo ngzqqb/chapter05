@@ -73,4 +73,3 @@ namespace sstd {
 }/*namespace sstd*/
 
 QML_DECLARE_TYPEINFO(sstd::FollowWindow, QML_HAS_ATTACHED_PROPERTIES)
-

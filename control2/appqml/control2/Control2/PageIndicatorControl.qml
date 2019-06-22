@@ -38,6 +38,3 @@ PrivateBasic{
 
 /*endl_input_of_latex_for_clanguage_lick*/
 // https://blog.csdn.net/luoyayun361/article/details/83373805
-
-
-
